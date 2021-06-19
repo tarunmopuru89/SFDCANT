@@ -23,7 +23,7 @@
       <sf:deploy username="${sf.targetusername}" password="${sf.targetpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
     </target>
 	
-	    <target name="ValidatePackage">
+	    <target name="DeployPackage">
       <sf:deploy username="${sf.targetusername}" password="${sf.targetpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
     </target>
 
