@@ -42,5 +42,7 @@
       <sf:deploy username="${sf.QA2username}" password="${sf.QA2password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
     </target>
 
+
+<!-- Closure-->
 <!--to initiate a PULL REQUEST-->
 </project>
