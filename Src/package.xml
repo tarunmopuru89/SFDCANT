@@ -20,5 +20,9 @@
         <members>Case</members>
         <name>Workflow</name>
     </types>
+	<types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
     <version>51.0</version>
 </Package>
