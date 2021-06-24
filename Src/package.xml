@@ -25,7 +25,7 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Contact</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -35,6 +35,10 @@
     <types>
         <members>*</members>
         <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>Workflow</name>
     </types>
     <version>51.0</version>
 </Package>
