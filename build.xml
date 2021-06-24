@@ -18,13 +18,28 @@
     </taskdef>
 
 
-    <!-- Validate the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
-    <target name="ValidatePackage">
-      <sf:deploy username="${sf.targetusername}" password="${sf.targetpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
+    <target name="ValidatePackageCI">
+      <sf:deploy username="${sf.CIusername}" password="${sf.CIpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
     </target>
 	
-	    <target name="DeployPackage">
-      <sf:deploy username="${sf.targetusername}" password="${sf.targetpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
+	    <target name="DeployPackageCI">
+      <sf:deploy username="${sf.CIusername}" password="${sf.CIpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
+    </target>
+	
+	    <target name="ValidatePackageUAT">
+      <sf:deploy username="${sf.UATusername}" password="${sf.UATpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
+    </target>
+	
+	    <target name="DeployPackageUAT">
+      <sf:deploy username="${sf.UATusername}" password="${sf.UATpassword}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
+    </target>
+	
+	    <target name="ValidatePackageQA2">
+      <sf:deploy username="${sf.QA2username}" password="${sf.QA2password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="true"/>
+    </target>
+	
+	    <target name="DeployPackageQA2">
+      <sf:deploy username="${sf.QA2username}" password="${sf.QA2password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" checkonly="false"/>
     </target>
 
 
